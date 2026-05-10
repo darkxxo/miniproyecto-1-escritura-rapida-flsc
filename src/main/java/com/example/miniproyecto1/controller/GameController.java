@@ -83,9 +83,6 @@ public class GameController {
 
         startTimer();
 
-        Font.loadFont(getClass().getResourceAsStream(
-                "/com/example/miniproyecto1/fonts/PressStart2P-Regular.ttf"), 1);
-
         wordTextField.setOnKeyPressed(new GameKeyHandler() {
             @Override
             public void onKeyPressed(KeyEvent event) {

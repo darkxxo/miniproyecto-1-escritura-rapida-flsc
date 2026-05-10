@@ -47,9 +47,6 @@ public class MenuController {
         menuMusic.setCycleCount(MediaPlayer.INDEFINITE);
         menuMusic.play();
 
-        Font.loadFont(getClass().getResourceAsStream(
-                "/com/example/miniproyecto1/fonts/PressStart2P-Regular.ttf"), 1);
-
         FadeTransition fadeTransition = new FadeTransition(Duration.seconds(1), hintLabel);
         fadeTransition.setFromValue(0.0);
         fadeTransition.setToValue(1.0);

@@ -2,6 +2,7 @@ package com.example.miniproyecto1;
 
 import com.example.miniproyecto1.view.MenuStage;
 import javafx.application.Application;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import java.io.IOException;
 
@@ -22,6 +23,10 @@ public class Main extends Application {
      */
     @Override
     public void start(Stage primaryStage) throws IOException {
+
+        Font.loadFont(getClass().getResourceAsStream(
+                "/com/example/miniproyecto1/fonts/PressStart2P-Regular.ttf"), 1);
+
         new MenuStage();
     }
 }

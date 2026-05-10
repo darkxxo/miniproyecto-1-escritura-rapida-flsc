@@ -75,9 +75,6 @@ public class GameOverController {
             AudioManager.play(pathLoop, true);
         });
 
-        Font.loadFont(getClass().getResourceAsStream(
-                "/com/example/miniproyecto1/fonts/PressStart2P-Regular.ttf"), 1);
-
         gameOverLabel.setOpacity(0);
         levelsLabel.setOpacity(0);
         reasonLabel.setOpacity(0);
