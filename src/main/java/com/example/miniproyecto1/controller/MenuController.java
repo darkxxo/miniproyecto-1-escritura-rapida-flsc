@@ -1,6 +1,7 @@
 package com.example.miniproyecto1.controller;
 
 import com.example.miniproyecto1.util.AudioManager;
+import javafx.scene.text.Font;
 import javafx.animation.FadeTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -45,6 +46,9 @@ public class MenuController {
         menuMusic = new MediaPlayer(media);
         menuMusic.setCycleCount(MediaPlayer.INDEFINITE);
         menuMusic.play();
+
+        Font.loadFont(getClass().getResourceAsStream(
+                "/com/example/miniproyecto1/fonts/PressStart2P-Regular.ttf"), 1);
 
         FadeTransition fadeTransition = new FadeTransition(Duration.seconds(1), hintLabel);
         fadeTransition.setFromValue(0.0);

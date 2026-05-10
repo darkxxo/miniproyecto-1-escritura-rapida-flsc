@@ -16,6 +16,7 @@ import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import java.io.IOException;
+import javafx.scene.text.Font;
 
 /**
  * Controller for the game over screen of Escritura Rapida.
@@ -73,6 +74,9 @@ public class GameOverController {
         first.setOnEndOfMedia(() -> {
             AudioManager.play(pathLoop, true);
         });
+
+        Font.loadFont(getClass().getResourceAsStream(
+                "/com/example/miniproyecto1/fonts/PressStart2P-Regular.ttf"), 1);
 
         gameOverLabel.setOpacity(0);
         levelsLabel.setOpacity(0);
